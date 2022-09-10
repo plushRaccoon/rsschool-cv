@@ -1,11 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/favico.svg" type="image/x-icon" />
+    <title>CV Iryna Pliakhanava</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <ul class="list navigation__list">
+          <li class="list__item navigation__item">
+            <a class="list__link navigation__link" href="#skills">skills</a>
+          </li>
+          <li class="list__item navigation__item">
+            <a class="list__link navigation__link" href="#projects">projects</a>
+          </li>
+          <li class="list__item navigation__item">
+            <a class="list__link navigation__link" href="#code">code</a>
+          </li>
+          <li class="list__item navigation__item">
+            <a class="list__link navigation__link" href="#education"
+              >education</a
+            >
+          </li>
+          <li class="list__item navigation__item">
+            <a class="list__link navigation__link" href="#english">english</a>
+          </li>
+          <li class="list__item navigation__item">
+            <a class="list__link navigation__link" href="#contacts">contacts</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="main__about">
+        <img src="img/pattern.svg" alt="pattern" class="pattern" />
+        <div class="about__first-block"></div>
+        <div class="about__middle-block">
+          <img
+            src="img/main-photo.jpeg"
+            alt="Iryna Pliakhanava"
+            class="img about__photo"
+          />
+          <h1 class="h1 about__name">Iryna Pliakhanava</h1>
+          <h3 class="h3 about__specialization">Frontend developer</h3>
+          <p class="about__description">
+            More than half of a year ago I quitted my job to learn Frontend development.
+            There is an exciting journey and I am thankful to RSSchool for walking me through enourmous amount of knowledge.
+            The studying is not a piece of cake for me, although this is not a rocket science. I'm here to catch up with the gaps I haven't managed to learn during the previous course. <br> 
+            What can I say about me? I worked as a technologist of medicines at pharmaceutical company. I liked it because my work required high attention to the details, sequense, work with different hardware and writing detailed instructions for workers. Isn't it similar to JavaScript coding? I think so. <br>  
+            As for my hobbies I'm addicted by English, travelling and floristry. I also adore bicycle trips and photography, especially film photography.
+          </p>
+        </div>
+        <div class="about__last-block"></div>
+      </section>
+      <section class="main__left">
+        <div class="item left__item">
+          <h2 class="item__title" id="skills">Skills</h2>
+          <ul class="list item__list">
+            <li class="list__item item__skill">HTML</li>
+            <li class="list__item item__skill">CSS</li>
+            <li class="list__item item__skill">JavaScript</li>
+            <li class="list__item item__skill">GIT</li>
+            <li class="list__item item__skill">Figma</li>
+          </ul>
+        </div>
+        <div class="item left__item-projects">
+          <h2 class="item__title" id="projects">Projects</h2>
+          <ul class="list item__list-projects">
+            <li class="list__item item__project">
+              <a
+                href="https://plushraccoon.github.io/rsschool-cv0/"
+                class="list__link link-project"
+                >The first curriculum vitae</a
+              >
+            </li>
+            <li class="list__item item__project">
+              <a
+                href="https://rolling-scopes-school.github.io/zefkapuh-JSFEPRESCHOOL/portfolio/"
+                class="list__link link-project"
+                >A landing page for a photographer</a
+              >
+            </li>
+            <li class="list__item item__project">
+              <a
+                href="https://rolling-scopes-school.github.io/zefkapuh-JSFEPRESCHOOL/portfolio/videoApp.html"
+                class="list__link link-project"
+                >A custom video player</a
+              >
+            </li>
+            <li class="list__item item__project">
+              <a
+                href="https://rolling-scopes-school.github.io/zefkapuh-JSFEPRESCHOOL/movieApp/"
+                class="list__link link-project"
+                >Movie App</a
+              >
+            </li>
+            <li class="list__item item__project">
+              <a
+                href="https://rolling-scopes-school.github.io/zefkapuh-JSFE2022Q1/shelter/pages/main/index.html"
+                class="list__link link-project"
+                >A site for a pet shelter</a
+              >
+            </li>
+            <li class="list__item item__project">
+              <a
+                href="https://plushraccoon.github.io/cssMemSlider/cssMemSlider/index.html"
+                class="list__link link-project"
+                >Pure CSS Mem slider</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="item left__item">
+          <h2 class="item__title" id="code">Code</h2>
+          <p class="item__text">
+            <code class="code">
+              function isDivideBy(number, a, b) { <br />
+              return number % a === 0 && number % b === 0; <br />
+              } <br />
+            </code>
+          </p>
+        </div>
+      </section>
+      <section class="main__right">
+        <div class="item right__item">
+          <h2 class="item__title" id="education">Education</h2>
+          <ul class="list item__list-education">
+            <li class="list__item item__education">
+              Belarusian State Technological University, 2017, Technologist of
+              medicines
+            </li>
+            <li class="list__item item__education">
+              <a class="list__link" href="https://htmlacademy.ru"
+                >HTMLAcademy Basic HTML, CSS, JavaScript</a
+              >
+            </li>
+            <li class="list__item item__education">
+              <a class="list__link" href="https://rs.school/js-stage0/"
+                >RSSchool «JavaScript/Front-end. Stage 0»</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="item right__item">
+          <h2 class="item__title" id="english">English</h2>
+          <p class="item__description">
+            My English level is B1 and I continue learning.
+          </p>
+        </div>
+        <div class="item right__item">
+          <h2 class="item__title" id="contacts">Contacts</h2>
+          <ul class="list item__list-contacts">
+            <li class="list__item item__contact">
+              <a class="list__link" href="mailto:irkapuh@gmail.com">Email</a>
+            </li>
+            <li class="list__item item__contact">
+              <a class="list__link" href="https://t.me/plushaaaaa">Telegram</a>
+            </li>
+            <li class="list__item item__contact">
+              Discord: Iryna Pliakhanava (@plushRaccoon)
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <ul class="list footer__list">
+        <li class="list__item footer__item">
+          <a
+            class="list__link footer__link"
+            href="https://github.com/plushRaccoon"
+          >
+            <img class="img footer__img" src="img/git-logo.png" alt="github" />
+          </a>
+        </li>
+        <li class="list__item footer__item">
+          <time class="time" datetime="2022-08">2022</time>
+        </li>
+        <li class="list__item footer__item">
+          <a class="list__link footer__link" href="https://rs.school/js/">
+            <img
+              class="img footer__logo"
+              src="img/rs-logo.svg"
+              alt="RSschool"
+            />
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
