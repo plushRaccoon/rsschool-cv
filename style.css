@@ -1,0 +1,9 @@
+:root {
+  --about-block-font: "Space Mono", monospace;
+  --text-font: "Inter", sans-serif;
+  --title-font: "Arial";
+  --about-block-color: #fff2d8;
+  --left-block-color: #8f84af;
+  --right-block-color-left-text: #ffffff;
+  --main-font-color: #255F65;
+}
