@@ -1,4 +1,4 @@
-# **==Irina Plekhanova==**
+# **==Iryna Pliakhanava==**
 
 ### **==Frontend developer==**
 
