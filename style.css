@@ -225,3 +225,26 @@ body {
 .item__contact {
   padding: 0.3em 0;
 }
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer__item:last-child {
+  width: 155px;
+}
+
+.footer__logo {
+  width: 100%;
+}
+
+.footer__logo,
+.footer__img {
+  filter: invert(30%) sepia(11%) saturate(2162%) hue-rotate(137deg) brightness(97%) contrast(87%);
+}
