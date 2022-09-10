@@ -27,3 +27,51 @@ body {
 * {
   box-sizing: border-box;
 }
+
+.header, 
+.main,
+.footer {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+}
+
+.list {
+  padding: 0;
+}
+
+.list__item {
+  list-style: none;
+}
+
+.list__link {
+  text-decoration: none;
+  color: var(--main-font-color);
+  transition: color 0.5s;
+}
+
+.list__link:hover {
+  color: var(--left-block-color);
+}
+
+.img {
+  max-width: 100%;
+}
+
+.header,
+.main__about {
+  background-color: var(--about-block-color);
+}
+
+.navigation__list {
+  display: flex;
+  font-size: 70%;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation__item {
+  padding: 0 1em;
+}
+
+
