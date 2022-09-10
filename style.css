@@ -74,4 +74,154 @@ body {
   padding: 0 1em;
 }
 
+.main {
+  display: grid;
+  grid-template-rows: repeat(2, 50%);
+  grid-template-columns: repeat(2, 50%);
+  justify-items: stretch;
+  align-items: center;
+}
 
+.main__about {
+  position: relative;
+  height: 37em;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  padding: 7rem auto;
+}
+
+.about__first-block,
+.about__last-block {
+  background-image: url('img/pattern.svg');
+  background-repeat: no-repeat;
+  width: 9.5rem;
+}
+
+.about__first-block {
+  background-position: -75px 10px;
+}
+
+.about__middle-block {
+  position: relative;
+  flex: 1 1 70%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pattern {
+  width: 20%;
+  position: absolute;
+  left: 9em;
+  bottom: -7em;
+  filter: invert(53%) sepia(11%) saturate(1011%) hue-rotate(214deg) brightness(101%) contrast(80%);
+  z-index: 1;
+}
+
+.about__last-block {
+  background-position: 75px 15em;
+}
+
+.about__name,
+.about__specialization,
+.about__description {
+  margin: 0;
+}
+
+.about__name {
+  padding-top: 1rem;
+  font-family: var(--about-block-font);
+  font-size: 2em;
+}
+
+.about__specialization {
+  font-family: var(--about-block-font);
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.about__description {
+  padding-top: 2rem;
+  width: 50%;
+  text-align: center;
+  font-size: 0.875em;
+}
+
+.about__photo {
+  width: 30%;
+  height: auto;
+  border-radius: 100em;
+}
+
+.main__right,
+.main__left {
+  height: 41rem;
+  padding: 1.5rem 3rem;
+}
+
+.main__left {
+  position: relative;
+  z-index: 3;
+  color: var(--right-block-color-left-text);
+  width: 100%;
+  background-color: var(--left-block-color);
+}
+
+.link-project {
+  color: var(--right-block-color-left-text);
+  transition: color 0.5s;
+}
+
+.link-project:hover {
+  color: var(--main-font-color);
+}
+
+.left__item,
+.left__item-projects,
+.right__item {
+  padding-top: 1em;
+}
+
+.item__title {
+  font-family: var(--about-block-font);
+  text-align: center;
+}
+
+.item__title#code {
+  margin-top: 0;
+}
+
+.item__list,
+.item__list-projects,
+.item__list-education,
+.item__list-contacts {
+  display: flex;
+  justify-content: center;
+}
+
+.item__list-projects,
+.item__list-education {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.item__list-contacts {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item__skill{
+  padding: 0 2em;
+}
+
+.item__project,
+.item__education,
+.item__contact {
+  padding: 0.3em 0;
+}
